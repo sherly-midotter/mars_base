@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	background-color: #F7F7F7;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+textarea {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.checklist {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+}
+
+h2 {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+label {
+	margin-left: 5px;
+}
+
+    </style>
+
+	<title>Time Tracker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Time Tracker</h1>
+		<form>
+			<label for="priorities">Enter your priorities for today:</label><br>
+			<textarea id="priorities" name="priorities" rows="10" cols="50"></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+		<div class="checklist">
+			<h2>Checklist</h2>
+			<ul>
+				<li><input type="checkbox" id="task1" name="task1" value="task1">
+				<label for="task1">Task 1</label></li>
+				<li><input type="checkbox" id="task2" name="task2" value="task2">
+				<label for="task2">Task 2</label></li>
+				<li><input type="checkbox" id="task3" name="task3" value="task3">
+				<label for="task3">Task 3</label></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

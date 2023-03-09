@@ -1,0 +1,55 @@
+/* Set the background color and animation */
+body {
+	background: linear-gradient(to right, #743ad5, #d53a9d, #d5883a, #3ad56b, #3a8ed5, #d53a3a);
+	background-size: 1200% 1200%;
+	animation: gradient 30s ease infinite;
+}
+
+/* Set the animation for the background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Style the header and navigation */
+header {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: color 0.2s;
+}
+
+nav a:hover {
+	color: #743ad5;
+}
